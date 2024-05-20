@@ -8,6 +8,16 @@ R2 (Robot2) 用の基幹CANバスのCANIDをリストアップするところ
 https://github.com/T-semi-Tohoku-Uni/NHK2024_R2_Raspi/blob/main/src/can_list.py
 
 ## 入出力一覧
+### ID: CANID_START(0x80)
+発信元: [NHK2024_mbd_R2UserButtons](https://github.com/T-semi-Tohoku-Uni/NHK2024_mbd_R2UserButtons)
+
+Data[0] == 0: 停止命令
+
+Data[0] == 1: プログラム開始命令
+
+Data[0] == 2: エリア1からのリトライ
+
+Data[0] == 3: エリア2からのリトライ
 ### ID: CANID_ROBOT_VEL(0x106)
 ラズパイが発信，足回り制御器が受信
 
